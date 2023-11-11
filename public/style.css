@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  margin: 10px;
+  padding: 10px;
+  font-style: italic;
+}
+.post {
+  width: 400px;
+  margin: 10px 10px 15px 10px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(239, 185, 165);
+}
+.user {
+  color: rgb(127, 32, 216);
+  margin-bottom: 3px;
+  font-size: 22px;
+}
+.content {
+  color: rgb(12, 12, 12);
+}
+a {
+  margin: 10px 0px 20px 10px;
+  padding: 5px 10px;
+  color: black;
+  text-decoration: none;
+  background-color: rgb(132, 241, 22);
+  border-radius: 10px;
+  font-weight: 700;
+}
