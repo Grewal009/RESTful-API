@@ -3,6 +3,10 @@ const app = express();
 const port = 8080;
 const path = require("path");
 
+// Universally Unique Identifier
+// to create unique id
+const { v4: uuidv4 } = require("uuid");
+
 app.use(express.urlencoded({ extended: true }));
 
 app.set("view engine", "ejs");
@@ -28,8 +32,20 @@ let posts = [
   },
 ];
 
-app.get("/", (req, res) => {
+app.get("/posts", (req, res) => {
   res.render("index.ejs", { posts });
+});
+
+app.get("/posts/new", (req, res) => {
+  res.render("new.ejs");
+});
+
+app.post("/posts", (req, res) => {
+  console.log(req.body);
+  let { username, content } = req.body;
+  let id = uuidv4(); // use to generate unique id
+  posts.unshift({ id, username, content });
+  res.redirect("/posts");
 });
 
 app.listen(port, () => {
