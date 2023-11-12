@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.main {
+  margin: 10px;
+  padding: 10px;
+}
+
+.user {
+  color: rgb(127, 32, 216);
+  margin-bottom: 3px;
+  font-size: 22px;
+}
+.content {
+  color: rgb(12, 12, 12);
+}
+a {
+  margin: 10px 0px 20px 10px;
+  padding: 5px 10px;
+  color: black;
+  text-decoration: none;
+  background-color: rgb(132, 241, 22);
+  border-radius: 10px;
+  font-weight: 700;
+}
