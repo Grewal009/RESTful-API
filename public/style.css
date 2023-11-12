@@ -56,3 +56,7 @@ h1 {
   font-weight: 700;
   cursor: pointer;
 }
+
+.actions {
+  display: flex;
+}

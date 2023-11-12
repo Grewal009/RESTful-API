@@ -14,10 +14,16 @@
       <div class="post">
         <h3 class="user">@<%= post.username %></h3>
         <h4 class="content"><%= post.content %></h4>
-        <a class="edit" href="http://localhost:8080/posts/<%= post.id %>/edit"
-          >edit</a
-        >
-        <a class="delete">delete</a>
+        <div class="actions">
+          <a class="edit" href="http://localhost:8080/posts/<%= post.id %>/edit"
+            >edit</a
+          >
+          <form method="post" action="/posts/<%= post.id %>?_method=DELETE">
+            <a class="delete"
+              ><button style="border: none; font-weight: 700">delete</button></a
+            >
+          </form>
+        </div>
       </div>
     </a>
     <% } %>
